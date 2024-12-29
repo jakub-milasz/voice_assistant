@@ -16,5 +16,5 @@ The app was created by using suitable libraries in Python to voice recognition a
 
 ## Model description
 Bag-of-words model in this case is a model of text which is trained on some dataset with phrases and their classes. After that it classifies
-the phrases to the proper class. The dataset is small, but it is enough for now.
+the user's phrases to the proper class and then assistant makes adequate instruction. The dataset is small, but it is enough for now.
 
