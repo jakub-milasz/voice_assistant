@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Asystent głosowy</title>
+    <link href="{{ url_for('static', path='/chat.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <header><h1>🎙️ Voice Assistant</h1></header>
+
+        <div id="chat-box" class="chat-box">
+            <div class="bot-message">Cześć! Jak mogę pomóc?</div>
+        </div>
+
+        <div class="controls">
+            <button id="mic-btn">🎤 Nagraj</button>
+            <input type="text" id="user-input" placeholder="lub napisz wiadomość..." />
+            <button id="send-btn">Wyślij</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', path='/chat.js') }}"></script>
+</body>
+</html>
+
