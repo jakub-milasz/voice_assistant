@@ -1,0 +1,145 @@
+Index: .idea/inspectionProfiles/Project_Default.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ /dev/null	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
+@@ -1,12 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <profile version="1.0">
+-    <option name="myName" value="Project Default" />
+-    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredIdentifiers">
+-        <list>
+-          <option value="main.*" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-  </profile>
+-</component>
+\ No newline at end of file
+Index: classified_phrases.csv
+===================================================================
+diff --git a/classified_phrases.csv b/classified_phrases.csv
+deleted file mode 100644
+--- a/classified_phrases.csv	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ /dev/null	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
+@@ -1,29 +0,0 @@
+-Zwrot,Klasyfikacja
+-Hello,1
+-Hi,1
+-Can you take a screenshot?,2
+-Please screenshot this,2
+-Add this to my to-do list,3
+-Could you add this task to my list?,3
+-Print my to-do list,4
+-Could you print out the tasks?,4
+-Thank you,5
+-Thanks a lot,5
+-Goodbye,6
+-See you later,6
+-What's up?,1
+-Hey there,1
+-Could you please screenshot that?,2
+-Add a new task to the list,3
+-Please print my tasks,4
+-Thanks for your help,5
+-Bye,6
+-Take care,6
+-Okay add a task again,3
+-Add another task,3
+-Take a printscreen,2
+-Take a photo of my screen,2
+-Okay now print the list of my tasks,4
+-Hello my friend,1
+-Remove a task,7
+-Delete a task,7
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ /dev/null	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Black\">\r\n    <option name=\"sdkName\" value=\"Python 3.12 (voice_assistant)\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.9\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ b/.idea/misc.xml	(date 1759762872465)
+@@ -1,7 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="Black">
+-    <option name="sdkName" value="Python 3.12 (voice_assistant)" />
+-  </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (voice_assistant)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/voice_assistant.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.9\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/voice_assistant.iml b/.idea/voice_assistant.iml
+--- a/.idea/voice_assistant.iml	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ b/.idea/voice_assistant.iml	(date 1759762865109)
+@@ -4,7 +4,10 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.13 (voice_assistant)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
++  <component name="TemplatesService">
++    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
++  </component>
+ </module>
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.venv\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ b/.gitignore	(date 1759762795939)
+@@ -1,1 +1,5 @@
+ .venv
++.env
++response.mp3
++response.wav
++welcome.mp3
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 2c3ffdc1a0272e24af2ef768f7734b459efefe55)
++++ b/.idea/vcs.xml	(date 1759762872603)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
