@@ -37,6 +37,15 @@ class VoiceThread(QThread):
         else:
             self.recognized.emit("Not recognized 😕")
 
+class AudioThread(QThread):
+    """Thread for voice response"""
+    def __init__(self, text):
+        super().__init__()
+        self.text = text
+
+    def run(self):
+        assistant_response(self.text)
+
 
 class Bubble(QWidget):
     """Class for bubble"""
@@ -168,7 +177,10 @@ class ChatWindow(QWidget):
         reply = generate_response(command, prompt_template)
         self.add_bot_message(reply)
         # voice response
-        assistant_response(reply)
+        audio_thread = AudioThread(reply)
+        audio_thread.start()
+        # Keep reference
+        self.audio_thread = audio_thread
 
 
 if __name__ == "__main__":
