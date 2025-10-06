@@ -12,9 +12,13 @@ genai.configure(api_key=os.environ.get("GOOGLE_AI_API_KEY"))
 model = genai.GenerativeModel("gemini-2.5-flash")
 chat_session = model.start_chat(history=[])
 
-def generate_response(command):
+prompt_template = """You are a voice assistant. You answer questions people ask
+in short way. Do not answer in long way, maximum 3 sentences. This is a question: {command}"""
+
+def generate_response(command, prompt):
     try:
-        response = chat_session.send_message(command)
+        filled_command = prompt.format(command=command)
+        response = chat_session.send_message(filled_command)
         return response.text
     except Exception as e:
         return f"API Error: {e}"
@@ -150,7 +154,7 @@ class ChatWindow(QWidget):
     # Procesing the command and reply
     def process_command(self, command):
         self.add_user_message(command)
-        reply = generate_response(command)
+        reply = generate_response(command, prompt_template)
         self.add_bot_message(reply)
         assistant_response(reply)
 
